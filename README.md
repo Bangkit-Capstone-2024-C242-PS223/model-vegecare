@@ -64,3 +64,6 @@ We trained our model using 3 pretrained model : MobilenetV2, InceptionV3, and Mo
 | InceptionV3       | 0.88    | 0.88 |
 | MobileNetV3Large   | 0.6    | 0.59 |
 
+MobileNetV2 outperformed the other pretrained models, achieving an impressive accuracy of 92% and an F1 score of 0.91. Based on this exceptional performance, we selected MobileNetV2 as the primary model for plant disease classification.
+
+After training the model, we integrated it with a database containing detailed information about the predicted diseases and the associated plants. The workflow ensures that the model's classification output serves as an input to query the database. The final output provides users with comprehensive information about the identified plant disease, including possible causes, symptoms, and recommended solutions.
